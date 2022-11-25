@@ -1,0 +1,58 @@
+// Footer grid
+.footerContainer{
+    display: grid;
+    grid-template-areas: 
+    'logofooter  mapaFooter iconosfooter ';
+}
+
+@media (max-width: 768px) {
+    .logofooter{
+        width: 100%;
+        
+    }
+    .footerContainer{
+        display: grid;
+        grid-template-areas: 
+        'logofooter'
+        'mapaFooter'
+        'iconosfooter';
+        text-align: center;
+    }
+    
+}
+
+/* FOOTER*/
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.fondoFooter{
+    background-image: url(../img/portada_facebook.png);
+    background-size: cover;
+      
+}
+.logofooter{
+    margin-top: 3%;
+}
+.mapaFooter{
+    margin-top: 3%; 
+}
+
+
+/* iconos redes sociales */
+  i{
+    font-size: 60px;
+    margin: 7%;
+    bottom: 50px;
+    
+} 
+.fa-square-whatsapp{
+    color: green;
+}
+.fa-instagram{
+    color: rgb(173, 58, 146);
+}
+.fa-facebook-f{
+    color: blue;
+   
+}

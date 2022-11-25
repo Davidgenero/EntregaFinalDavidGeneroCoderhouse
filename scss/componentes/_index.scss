@@ -1,0 +1,121 @@
+
+
+/* INDEX */
+ 
+.carousel-item{
+    height: 90vh;
+    margin-top: 1%;
+    border-radius: 40px; 
+}
+ 
+ 
+ /* Index Main */
+ .imgIndex1{
+    margin-top: 5%;
+    border-radius: $radius1;
+ }
+
+ .textoIndex{
+     margin-top: 5%;
+ }
+ .textoFondoBco{
+    @include txtFdoBco
+ }
+ .imgIndex2{
+    margin-top: 5%;
+    margin-left: -0,5%;
+    border-radius: $radius1;
+ }
+ .imgIndex3{
+     margin-top: -10%;
+     margin-bottom: 5%;
+     margin-left: 7%;
+     height: 40%;
+     width: 40%;
+     border-radius: $radius1;
+ }
+
+//  index section2
+.containerIndCosecha{
+    display: grid;
+    grid-template-areas: 
+    ' nuezRueznoAbierto1 txtcosecha2 '
+    'txtcosecha4  nuecesMano3 '
+    'nuecesCanasta5  txtcosecha6';
+   
+    
+}
+.nuezRueznoAbierto1{
+    margin-left: 10%;
+    border-radius: $radius1;
+}
+.txtcosecha2{
+    margin-right: 5%;
+    @include txtFdoBco
+}
+.nuecesMano3{
+    margin-left: 10%;
+    border-radius: $radius1;
+}
+
+.txtcosecha4{
+    margin-left: 10%;
+    @include txtFdoBco
+}
+.nuecesCanasta5{
+    border-radius: $radius1;
+}
+.txtcosecha6{
+    margin-left: 10%;
+    @include txtFdoBco
+}
+
+// media query index
+@media (max-width: 768px) {
+    .imgIndex1{
+        margin-top: -40%;
+    }
+    .textoIndex{
+        margin-bottom: 5%;
+    }
+    .containerIndCosecha{
+        display: grid;
+        grid-template-areas: 
+        'nuezRueznoAbierto1'
+        'txtcosecha2'
+        'nuecesMano3 '
+        'txtcosecha4'  
+        'nuecesCanasta5'
+        'txtcosecha6';
+    }    
+    .nuezRueznoAbierto1{
+        width: $mivw80;
+        border-radius: $radius1;
+       }
+       .txtcosecha2{
+           margin-left: 4%;
+           width: $mivw80;
+           margin-top: -1%;
+           @include txtFdoBco
+       }
+       .nuecesMano3{
+           width: $mivw80;
+           margin-right: 10%;
+           border-radius: $radius1;
+       }
+       
+       .txtcosecha4{
+           margin-left: 3%;
+           width: $mivw80;
+           @include txtFdoBco
+       }
+       .nuecesCanasta5{
+           width: $mivw80;
+           margin-left: 11%;
+           border-radius: $radius1;
+       }
+       .txtcosecha6{
+           margin-left: 3%;
+           @include txtFdoBco
+       }
+    }
